@@ -1,0 +1,16 @@
+<h1>Listing users</h1>
+
+<table>
+
+<% @matches.each do |id1, id2| %>
+  <tr>
+    <%user1 = User.find_by_id(id1)
+      user2 = User.find_by_id(id2)%>
+    <td><%= user1.name%> is up against: <%=user2.name%></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New User', new_user_path %>

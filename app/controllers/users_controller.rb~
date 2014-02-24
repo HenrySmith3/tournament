@@ -40,8 +40,7 @@ class UsersController < ApplicationController
   # POST /users
   # POST /users.json
   def create
-    params[:level] = 1
-    puts(params)
+    params[:user][:level] = 1
     @user = User.new(params[:user])
 
     respond_to do |format|

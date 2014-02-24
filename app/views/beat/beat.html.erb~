@@ -1,0 +1,18 @@
+<h1>Listing users</h1>
+
+<table>
+    <div class="field">
+    <%= f.label :winner %><br />
+    <%= f.text_field :winner %>
+  </div>
+    <div class="field">
+    <%= f.label :loser %><br />
+    <%= f.text_field :loser %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+<br />
+
+<%= link_to 'New User', new_user_path %>

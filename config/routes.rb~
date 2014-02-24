@@ -1,6 +1,6 @@
 Tournament::Application.routes.draw do
   resources :users
-  get 'beaten/', to: 'beat#beaten'
+  get 'beaten/*', to: 'beat#beaten'
   resources :beat
 
 
